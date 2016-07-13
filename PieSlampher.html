@@ -32,8 +32,8 @@
 	});
 
 	microgear.on('connected', function() {
-		microgear.subscribe('/pieslampher/state');
-		microgear.chat('pieslampher','?');
+		microgear.subscribe('/pieslampher2/state');
+		microgear.chat('pieslampher2','?');
 		document.getElementById("data").innerHTML = "<FONT color=#00BB00>ONLINE</FONT>";
 	});
 
@@ -47,9 +47,9 @@
 
     function toggle() {
         switch (state) {
-            case 0 :  microgear.chat('pieslampher','1');
+            case 0 :  microgear.chat('pieslampher2','1');
                       break;
-            case 1 :  microgear.chat('pieslampher','0');
+            case 1 :  microgear.chat('pieslampher2','0');
                       break;
         }
     }
